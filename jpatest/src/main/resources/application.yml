@@ -1,15 +1,17 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.2.53:3306/fa_test?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: slkj
-    password: pass4sql!
+    url: jdbc:mysql://localhost:3306/fa_test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 888999
   jpa:
     # 显示sql语句
     show-sql: true
     hibernate:
       ddl-auto: update
-        #ddl-atuo取值
+        #  ddl-atuo取值:  是否自动生/更新成表，根据什么策略
         #  create: **每次运行该程序，根据modl类创建信标，表内有数据会清空
         #  create-drop: **每次程序启动,会根据model类创建新的表,程序结束sessionFactory销毁时,把对应表删除掉.
         #  update 每次运行程序，没有表格会新建表格，表内有数据不会清空，只会更新
+
+
